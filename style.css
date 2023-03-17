@@ -1,0 +1,273 @@
+.logo{
+    width: 50px;
+}
+*{
+    font-family: "inter", sans-serif;
+}
+body{
+    padding: 0 10px;
+    background-color: hsl(36, 100%, 99%);
+}
+section{
+    margin-bottom: 60px;
+}
+.one img{
+    width: 100%;
+}
+.one h1{
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 10px 0;
+}
+P{
+    font-size: 1rem;
+}
+.btn{
+    color: white;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    padding: 15px 25px;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+}
+.btn:active{
+    background-color: hsl(240, 100%, 5%);
+}
+
+.two{
+    background-color: hsl(240, 100%, 5%);
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+.two p{
+    color: hsl(233, 8%, 79%);
+}
+.two h3{
+    color: white;
+}
+.two h1{
+    color: hsl(35, 77%, 62%);
+    font-size: 2rem;
+}
+.two hr{
+    margin: 40px 0;
+    border-color: hsl(233, 8%, 79%);;
+}
+
+.row{
+    display: flex;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+.row img{
+    width: 120px;
+}
+.text h1{
+    font-size: 2rem;
+    color: hsl(233, 8%, 79%);
+    font-weight: 700;
+    margin: 0;
+}
+.text h3{
+    font-weight: 800;
+    margin: 1rem 0;
+}
+.text p{
+    margin: 0;
+    line-height: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+li{
+    height: 7rem;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+li:hover{
+    background-color: rgb(231, 231, 231);
+}
+ul{
+    display: none;
+}
+
+.active{
+    position: fixed;
+    background-color: white;
+    flex-direction: column;
+    top: -2vh;
+    right: 0;
+    bottom: 0;
+    height: 101vh;
+    list-style: none;
+    z-index: 100;
+    width: 50vw;
+    justify-content: center;
+    padding: 0;
+    display: flex;
+}
+.menuButton.active{
+    position: fixed;
+    top: 35px;
+    right: 6px;
+    height: fit-content;
+    width: fit-content;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    align-items: center;
+    flex: 1;
+}
+header .menuButton{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    top: 34px;
+    right: 0;
+    position: absolute;
+    z-index: 200;
+    user-select: none;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+
+
+@media (min-width: 900px){
+    body{
+        padding: 0 10%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: space-between;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        height: 100%;
+    }
+    .top{
+        display: flex;
+        gap: 30px;
+        flex: 1;
+        align-items: top;
+        height: fit-content;
+    }
+    .one{
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        justify-content: space-between;
+        min-height: fit-content;
+    }
+    .one picture img{
+        height: 300px;
+        object-fit:cover;
+        width: 100%;
+        object-position: top;
+    }
+    .herotext{
+        display: flex;
+        gap: 50px;
+    }
+    .one .btn{
+        height: fit-content;
+        width: fit-content;
+        font-size: 1rem;
+        margin: 0;
+    }
+    .one .herotext div p{
+        line-height: 1.5rem;
+        font-size: 1rem;
+        margin: 0;
+    }
+    .one .herotext div{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .one .herotext div h1{
+        font-size: 3.5rem;
+        font-weight: 900;
+        margin: 0;
+    }
+    .two{
+        flex: 1;
+    }
+    .two h1{
+        font-size: 2.5rem;
+    }
+    .two h3{
+        font-size: 1.3rem;
+    }
+    .three{
+        display: flex;
+        flex: 1;
+        align-items: center;
+    }
+    .three img{
+        object-fit: cover;
+    }
+    .one, .two, .three{
+        margin-bottom: 0;
+    }
+    .logo{
+        width: 70px;
+        height: 40px;
+    }
+    li{
+        display: flex;
+        height: fit-content;
+        padding-left: 0;
+        display: block;
+    }
+    li:hover{
+        background-color: transparent;
+    }
+    header .menuButton{
+        display: none;
+        position: absolute;
+    }
+    ul{
+        display: flex;
+        gap: 35px;
+        justify-content: space-between;
+        list-style: none;
+        width: fit-content;
+        position: static;
+        background-color: transparent;
+        flex-direction: row;
+        height: fit-content;
+        
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        align-items: center;
+        flex: 1;
+
+    }
+    a{
+        font-size: 1.1rem;
+    }
+    .btn:hover{
+        background-color: hsl(240, 100%, 5%);
+    }
+    .btn:active{
+        background-color: black;
+    }
+}
